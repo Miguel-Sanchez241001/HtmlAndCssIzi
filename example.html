@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Web</title>
+</head>
+<body>
+    <h1>Parrafo</h1>
+    <p id="inicio"title="esto es un loren">Lorem, ipsum dolor sit amet consectetur adipisicing
+         elit. Sequi explicabo voluptatum architecto. Est temporibus, 
+         maxime quo excepturi id et delectus modi voluptas, 
+        aspernatur eaque vitae vero aliquam magni autem iste?
+    </p>
+    <p id="data" data-fresh="datitos" class="parrafo">
+                sd    
+    </p>
+    <style>
+        #inicio{
+            color: green;
+        }
+        .parrafo{
+            color: blue;
+        }
+    </style>
+    <script>
+        const v = document.getElementById("data");
+        const b = document.getElementById("inicio");
+        console.log(v.dataset.fresh);
+        console.log(b.textContent);
+    </script>
+</body>
+</html>
